@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    background-color: white;
+    width: 65%;
+    min-height: 86%;
+    border-radius: 8px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: max-content;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.nome{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: 500;
+}
+
+.valor{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    font-size: 90px;
+    color: red;
+   
+}
+
+.liquidacao{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    background-color:rgb(53, 253, 220);
+    font-size: 40px;
+    border-radius: 8px;
+}
+
+.valorPromo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: green;
+    font-size: 40px;
+}
+
+.valorPromo2{
+    font-size: 0px;
+}
+
+.distribuidor{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+
+

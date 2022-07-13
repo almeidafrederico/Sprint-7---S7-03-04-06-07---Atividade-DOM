@@ -40,6 +40,12 @@ let liquidacaoTag   = document.createElement("p");
 let valorPromoTag   = document.createElement("p");
 let distribuidor    = document.createElement("p");
 
+nomeTag.classList.add("nome");
+valorTag.classList.add("valor");
+liquidacaoTag.classList.add("liquidacao");
+valorPromoTag.classList.add("valorPromo");
+distribuidor.classList.add("distribuidor");
+
 nomeTag.innerText       = produto.nome;
 valorTag.innerText      = produto.valor.toFixed(2);
 liquidacaoTag.innerText = "Em liquidação";
@@ -49,3 +55,16 @@ distribuidor.innerText  = `Fabricante:  ${produto.distribuidor}`;
 liProduto.append(nomeTag, valorTag, liquidacaoTag, valorPromoTag, distribuidor);
 ulProdutos.appendChild(liProduto);
 mainTag.appendChild(ulProdutos);
+
+liProduto.addEventListener('click', function(e) {
+    let targetTag = e.target;
+    if(targetTag.classList[0]=="liquidacao"){  
+        console.log(targetTag.classList[0]);
+        if(valorPromoTag.classList.contains("valorPromo")){
+            valorPromoTag.classList.replace("valorPromo", "valorPromo2");
+        }
+        else{
+            valorPromoTag.classList.replace("valorPromo2", "valorPromo");
+        }
+    }
+});
