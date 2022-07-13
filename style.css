@@ -1,4 +1,4 @@
-body{
+/* body{
     margin: 0;
     padding: 0;
     border: 0;
@@ -91,6 +91,73 @@ p{
     font-size: 40px;
     font-weight: 100;
 }
+ */
 
 
+/* ------------------------------------------------- */
+/* S7-06| 💪 Atividade: Lista de Tarefas */
 
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(197, 25, 25);
+    min-height: 100px;
+    width: 600px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.InserirTarefa{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 80%;
+    justify-content: space-between;
+}
+
+button{
+    width: 80%;
+}
+
+ul{
+    list-style: none;
+    width: 100%;
+}
+
+main h1{
+    width: 100%;
+}
+
+li{
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li button{
+    width: 100px;
+}
